@@ -1,0 +1,54 @@
+#starGame{
+    width: 720px;
+    height: 480px;
+    margin: 0 auto;
+    background-color: dimgrey;
+    position: relative;
+}
+
+#control{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: lightskyblue;
+    cursor: pointer;
+}
+
+#computer,#guest{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    float: left;
+}
+
+#guest{float: right}
+#computer> li, #guest> li{
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 105px;
+    left: 0;
+    visibility: hidden;
+}
+
+#guest > li{
+    left: auto;
+    right: 0;
+}
+
+.rock{
+    background: url("https://res.cloudinary.com/itsellej/image/upload/v1533400140/rock-paper-scissors/rock.png") no-repeat;
+}
+.scissor{
+    background: url("https://res.cloudinary.com/itsellej/image/upload/v1533400144/rock-paper-scissors/scissors.png ") no-repeat;
+}
+.paper{
+    background: url("https://res.cloudinary.com/itsellej/image/upload/v1533400143/rock-paper-scissors/paper.png") no-repeat;
+}
